@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Homepage</title>
+        <link rel="stylesheet" type = "text/css" a href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+    
+    <!-- Header goes here -->
+    <div class="header"></div><br>
+
+
+    <!-- Side naviation bar that pops up -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="totry.html">To Try List</a>
+        <a href="previous.html">Previous recipes</a>
+        <a href="favorites.html">Favorites</a>
+        <a href="recommended.html">Recommended</a>
+      </div>
+
+      <!-- Change the word based on the page we're currently on -->
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Home</span>
+      
+
+      <!-- Functions for the opening and closing of the navbar -->
+      <script>
+      function openNav() { document.getElementById("mySidenav").style.width = "250px"; }
+      function closeNav() { document.getElementById("mySidenav").style.width = "0"; }
+      </script>
+
+    <div id="main">
+        <div class="blockquote">The online, easy to use, cooking guide, personalized to your own fridge!</div>
+        <div class="photowrapper">
+            <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
+
+
+            <div id="searchbox">
+                <form class="search" action="/action_page.php" style="margin:auto;max-width:500px; padding:20px;">
+
+                <!-- SEARCH BUTTON + SUBMIT BUTTON -->
+                <input type="text" placeholder="Search.." name="search2">
+                <button type="submit"><i class="fa fa-search"></i></button>
+
+                <br><br>
+                <div style=" color:white; padding:15px;">
+                    <label class="searchtype">Recipe&nbsp;&nbsp;
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="searchtype">Ingredients&nbsp;&nbsp;
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="searchtype">Cuisine&nbsp;&nbsp;
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                  </div> <!-- END OF SEARCH TYPE BUTTONS -->
+
+            </form>
+            
+            <br>                
+            <div>&nbsp;</div><div>&nbsp;</div>
+
+            <div id="text">Search from our thousands of recipes, based on your fridge's contents or your stomach's cravings! <br></div>
+
+        </div> <!-- end of searchbox -->
+
+     </div> <!-- end of photowrapper -->
+
+    </div> <!-- end of main -->
+
+    </body>
+</html>
