@@ -1,11 +1,8 @@
 {
-  "name": "helloapp",
+  "name": "little-chef",
   "version": "1.0.0",
-  "description": "node app ",
-  "main": "hello_app.js",
-  "scripts": {
-    "start": "node hello_app.js"
-  },
+  "description": "recipe app",
+  "main": "index.html",
   "repository": {
     "type": "git",
     "url": ""
@@ -15,9 +12,5 @@
   "bugs": {
     "url": ""
   },
-  "homepage": "",
-  "dependencies": {
-    "calendar": "^0.1.1",
-    "mongodb": "^3.6.3"
-  }
+  "homepage": "index.html",
 }
