@@ -1,8 +1,12 @@
 {
-  "name": "little-chef",
+  "name": "littlechef",
   "version": "1.0.0",
   "description": "recipe app",
   "main": "index.html",
+  "scripts": {
+  "start": "node test.js"
+  },
+  
   "repository": {
     "type": "git",
     "url": ""
@@ -12,5 +16,5 @@
   "bugs": {
     "url": ""
   },
-  "homepage": "index.html",
+  "homepage": ""
 }
